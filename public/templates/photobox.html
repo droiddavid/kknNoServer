@@ -1,0 +1,86 @@
+<div id="photobox" class="col-sm-4 col-lg-4 col-md-4">
+	<div class="thumbnail_gallery">
+		
+	</div>
+	<div class="thumbnail">
+
+		<img id="{{data.alternatetext}}" ng-src={{data.thumbnail}} alt={{data.alternatetext}} />
+
+		<div class="caption">
+			<h4 class="pull-right">{{data.price | currency}}</h4>
+			<h4><a href="#">{{data.alternatetext}}</a></h4>
+			<p class="imagetext">{{data.imagetext}}</p>
+		</div>
+
+
+		
+
+		<div class="ratings">
+			<p class="pull-right">
+
+				<button id="more" class="btn btn-primary" ng-click="more(data.image, data.alternatetext)">
+					More<span><strong>...</strong></span>
+				</button>
+				<!--{{data.numberofreviews}} reviews-->
+			</p>
+		</div>
+
+	</div>
+
+	<div class={{class}}> <!-- photobox_popup OR pop -->
+
+		<ul>
+			<li style="list-style-type: none;" ng-repeat="item in data.images.pictures">
+				<div ng-if="meal_index == $index">
+					
+					<img id="image_collection" ng-src={{item.imagename}} alt={{data.alternatetext}} /><br />
+					
+					<button 
+						class="btn btn-primary" 
+						ng-click="lightbox_close()"
+						style="float: none; display: table-cell; vertical-align: bottom;"
+					>
+						CLOSE
+					</button>
+
+
+					<button 
+						class="btn btn-primary" 
+						ng-click="previous()"
+						style="float: none; display: table-cell; vertical-align: bottom;"
+					>
+						PREVIOUS
+					</button>
+
+
+					<button 
+						class="btn btn-primary photobox_properties" 
+						ng-click="next()" 
+						style="float: none; display: table-cell; vertical-align: bottom;"
+					>
+						NEXT
+					</button>
+
+					<br /><br />
+
+					<p 
+						style="float: none; display: table-cell; vertical-align: bottom;">
+						{{data.description.data.join('\n')}}
+					</p>
+		
+				</div>
+			</li>
+		</ul>
+		
+	</div>
+
+
+</div>
+<!--
+	<p>image is: 			<img ng-src={{photo.image}}></p>
+	<p>alternatetext is: 	{{photo.alternatetext}}</p>
+	<p>imagetext is: 		{{photo.imagetext}}</p>
+	<p>thumbnail is: 		<img ng-src={{photo.thumbnail}}></p>
+	<p>numberofreviews is: 	{{photo.numberofreviews}}</p>
+	<p>price is: 			{{photo.price}}</p>
+-->

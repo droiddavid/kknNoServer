@@ -1,0 +1,13 @@
+				<div ng-controller="GalleryController">
+
+					<!-- PHOTOBOXES PHOTOBOXES PHOTOBOXES PHOTOBOXES PHOTOBOXES PHOTOBOXES -->
+					<div class="row">
+
+						<div ng-repeat="photo in photoboxes | filter: { status: 'sold' } ">
+							<photobox data='photo'></photobox>
+						</div>
+
+					</div> <!-- end row -->
+					<!-- PHOTOBOXES PHOTOBOXES PHOTOBOXES PHOTOBOXES PHOTOBOXES PHOTOBOXES -->
+					
+				</div>

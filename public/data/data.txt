@@ -1,0 +1,13 @@
+[
+	{image: 'precious.jpg', 	alternatetext: 'Precious', 		imagetext: 'Precious is a great baby.', 	thumbnail: 'precious320x150.jpg'},
+	{image: 'layingbaby.jpg', 	alternatetext: 'Laying Baby', 	imagetext: 'Laying Baby is a great baby.', 	thumbnail: 'layingbaby320x150.jpg'},
+	{image: 'heaven.jpg', 		alternatetext: 'Heaven', 		imagetext: 'Heaven is a great baby.', 		thumbnail: 'heaven320x150.jpg'},
+	{image: 'rochelle.jpg', 	alternatetext: 'Rochelle', 		imagetext: 'Rochelle is a great baby.', 	thumbnail: 'rochelle320x150.jpg'},
+	{image: 'dana.jpg', 		alternatetext: 'Dana', 			imagetext: 'Dana is a great baby.', 		thumbnail: 'dana320x150.jpg'},
+	{image: 'cindy.jpg', 		alternatetext: 'Cindy', 		imagetext: 'Cindy is a great baby.', 		thumbnail: 'cindy320x150.jpg'},
+	{image: 'gracy.jpg', 		alternatetext: 'Gracy', 		imagetext: 'Gracy is a great baby.', 		thumbnail: 'gracy320x150.jpg'},
+	{image: 'brenda.jpg', 		alternatetext: 'Brenda', 		imagetext: 'Brenda is a great baby.', 		thumbnail: 'brenda320x150.jpg'},
+	{image: 'tracy.jpg', 		alternatetext: 'Tracy', 		imagetext: 'Tracy is a great baby.', 		thumbnail: 'tracy320x150.jpg'},
+	{image: 'barry.jpg', 		alternatetext: 'Barry', 		imagetext: 'Barry is a great baby.', 		thumbnail: 'barry320x150.jpg'},
+	{image: 'alex.jpg', 		alternatetext: 'Alex', 			imagetext: 'Alex is a great baby.', 		thumbnail: 'alex320x150.jpg'}
+]

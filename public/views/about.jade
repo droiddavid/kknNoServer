@@ -1,0 +1,29 @@
+extends layout
+
+block content
+	div(class="row carousel-holder")SPANSPANSPANSPANSPANSPANSPANSPAN
+		div(class="col-md-12")
+			div(id="CarouselDemoCtrl")
+				div(style="height:305px;" ng-controller="AboutController")
+					carousel(interval="myInterval")
+						slide(ng-repeat="slide in aboutusslides" active="slide.active")
+							img(ng-src="{{slide.image}}" style="margin:auto;")
+							div(class="carousel-caption")
+								p {{slide.alternatetext}}
+	div(class="row")
+		div(class="col-sm-10 col-lg-10 col-md-10")
+			h2 Who We Are
+			p LaShae Designs is a manifestation of a true Christian artist's desire to put the Breath Of Life into the hands of every woman and child who loves GOD and has the desire to hold in reverence his greatest creation, a human born child.
+			h2 What We Do
+			p Our love for the Lord and the beauty of his touch has helped us to reach deep into our souls and pull from them that which mimics the creators newest additions to the human race, newborn babies.  We call them our Reborn Babies.
+			h2 Why We Do It
+			p These babies truly belong to the Kingdom of God and are too much for Kingdom Kids Nursery For Reborns to deny sharing them with the world at large.  We love creating these life like babies in reverence to the Most High and welcome you to share in these gifts to humanity.
+			h2 How We Do it
+			p Every one of our babies is hand painted using Genesis Heat Paint.  They are then hand molted, their hair rooted and detailed veins placed properly along with many more detailed cosmetic which add to the loving realism of these exceptionally crafted reborn doll babies.
+
+	div(class="container")
+	hr
+	footer
+	div(class="row")
+		div(class="col-lg-12")
+			p Copyright &copy; Kingdom Kids Nursery 2015

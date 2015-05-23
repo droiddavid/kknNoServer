@@ -1,0 +1,34 @@
+				<div id="IndexController" ng-controller="IndexController">
+					
+					<!-- CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL -->
+					<div class="row carousel-holder">
+						<div class="col-md-12">
+							<div id="CarouselDemoCtrl">
+								<div style="height:305px;">
+									<carousel interval="myInterval">
+										<slide ng-repeat="photo in photoboxes" active="slide.active">
+											<img ng-src="{{photo.image}}" style="margin:auto;" />
+											<div class="carousel-caption">
+												<p>{{photo.alternatetext}}</p>												
+											</div>
+										</slide>
+									</carousel>	
+								</div>
+							</div>
+						</div>
+					</div>
+					<!-- CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL CAROUSEL -->
+
+
+
+					<!-- PHOTOBOXES PHOTOBOXES PHOTOBOXES PHOTOBOXES PHOTOBOXES PHOTOBOXES -->
+					<div class="row">
+
+						<div ng-repeat="photo in photoboxes | filter: { status: 'available' } ">
+							<photobox data='photo'></photobox>
+						</div>
+
+					</div> <!-- end row -->
+					<!-- PHOTOBOXES PHOTOBOXES PHOTOBOXES PHOTOBOXES PHOTOBOXES PHOTOBOXES -->
+					
+				</div>

@@ -1,0 +1,403 @@
+html,body{
+	height:100%;
+	margin:0;
+	padding:0;
+}
+
+
+
+
+
+body {
+	font: 16px "Lucida Grande", Helvetica, Arial, sans-serif;
+	width: 100%;
+	padding: 50px;
+}
+
+
+
+
+img {
+    max-width: 100%;
+}
+
+
+
+
+a {
+  color: #00B7FF;
+}
+
+
+
+
+.noclass {
+
+    -webkit-column-count: 3; /* Chrome, Safari, Opera */
+    -moz-column-count: 3; /* Firefox */
+    column-count: 3;
+
+    -webkit-column-gap: 40px; /* Chrome, Safari, Opera */
+    -moz-column-gap: 40px; /* Firefox */
+    column-gap: 40px;
+
+    -webkit-column-rule-style: solid; /* Chrome, Safari, Opera */
+    -moz-column-rule-style: solid; /* Firefox */
+    column-rule-style: solid;
+
+    -webkit-column-rule-width: 1px; /* Chrome, Safari, Opera */
+    -moz-column-rule-width: 1px; /* Firefox */
+    column-rule-width: 1px;
+
+}
+
+
+
+
+.containter_height {
+    display:flex;
+    width:100%;
+    border-collapse:separate;
+    height:100%;
+}
+
+
+
+
+.aboutusbox {
+	border: 1px solid red;
+	display: block;
+	height: 100%;
+
+}
+
+
+
+
+.flip3D {
+	width: 240px;
+	height: 800px;
+	float: left;
+}
+
+
+.flip3D > .front {
+	position: absolute;
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
+	background: #FC0; width: 240px; height: 100%; border-radius: 15px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: transform .5s linear 0s;
+	transition: transform .6s linear 0s;
+}
+
+
+.flip3D > .back {
+	position: absolute;
+	-webkit-transform: perspective( 600px ) rotateY( 180deg );
+	transform: perspective( 600px ) rotateY( 180deg );
+	background: #80BFFF; width: 240px; height: 100%; border-radius: 25px;
+	-webkit-backface-visibility: hidden;
+	backface-visibility: hidden;
+	-webkit-transition: transform .5s linear 0s;
+	transition: transform .6s linear 0s;
+}
+
+
+.flip3D:hover > .front {
+	-webkit-transform: perspective( 600px ) rotateY( -180deg );
+	transform: perspective( 600px ) rotateY( -180deg );
+}
+
+
+.flip3D:hover > .back {
+	-webkit-transform: perspective( 600px ) rotateY( 0deg );
+	transform: perspective( 600px ) rotateY( 0deg );
+}
+
+.front.aboutus_one {
+	background-image: url("/media/images/aboutus_one.png");
+	background-size: contain;
+	width: 30%;
+	color: white;
+}
+
+.front.aboutus_two {
+	background-image: url("/media/images/aboutus_blackbabyinpink.png");
+	background-size: contain;
+	width: 30%;
+
+	color: white;}
+
+.front.aboutus_three {
+	background-image: url("/media/images/aboutus_three.png");
+	background-size: contain;
+	width: 30%;
+	color: white;
+}
+
+.front.aboutus_label {
+
+}
+
+
+
+.content{
+    display:table;
+    width:100%;
+    border-spacing:10px;
+    border-collapse:separate;
+    background:#A36;
+    height:100%;
+    padding:40px 0;
+
+
+    border: 5px solid red;
+}
+
+.col{
+    display:table-cell;
+    border-radius:5px;
+    background:#fff;
+    width:30%;
+    border: 5px solid green;
+}
+
+
+#header_content,#footer_content{
+    height:70px;
+    background:#2F7;
+    position:relative;
+    z-index:1;
+
+    border: 5px solid blue;
+}
+
+
+.moviebackground {
+	border: 2px solid red;
+	border-radius: 2px;
+	margin-bottom: 10px;
+	text-align: center;
+	font-size: larger;
+	padding: 0px;
+}
+
+
+
+
+
+/*** CLASSES FOR VIDEOS LISTINGS ***/
+/**** BASE ****/
+body {
+    color: #888;   
+}
+a {
+    color: #03a1d1;
+}
+
+/**** LAYOUT ****/
+.list-inline>li {
+    padding: 0 10px 0 0;
+}
+.container-pad {
+    padding: 30px 15px;
+}
+
+
+/**** MODULE ****/
+.bgc-fff {
+    background-color: #fff!important;
+}
+.box-shad {
+    -webkit-box-shadow: 1px 1px 0 rgba(0,0,0,.2);
+    box-shadow: 1px 1px 0 rgba(0,0,0,.2);
+}
+.brdr {
+    border: 1px solid #ededed;
+}
+
+/* Font changes */
+.fnt-smaller {
+    font-size: .9em;
+}
+.fnt-lighter {
+    color: #bbb;
+}
+
+/* Padding - Margins */
+.pad-10 {
+    padding: 10px!important;
+}
+.mrg-0 {
+    margin: 0!important;
+}
+.btm-mrg-10 {
+    margin-bottom: 10px!important;
+}
+.btm-mrg-20 {
+    margin-bottom: 20px!important;
+}
+
+/* Color  */
+.clr-535353 {
+    color: #535353;
+}
+
+
+
+
+/**** MEDIA QUERIES ****/
+@media only screen and (max-width: 991px) {
+    #property-listings .property-listing {
+        padding: 5px!important;
+    }
+    #property-listings .property-listing a {
+        margin: 0;
+    }
+    #property-listings .property-listing .media-body {
+        padding: 10px;
+    }
+}
+
+@media only screen and (min-width: 992px) {
+    #property-listings .property-listing img {
+        max-width: 180px;
+    }
+}
+
+
+
+#photobox {
+    /* position: relative; */
+}
+
+
+/*
+#photobox:hover > .photobox_popup {
+    background-color: #369;
+    border-radius: 10px;
+    color: white;
+    display: block;
+    float: right;
+    left:20px;
+    overflow-y: auto;
+    padding: 15px;
+    position:absolute;
+    top: 10px;
+    width: 300px;
+}
+*/
+
+
+
+.photobox_popup {
+    display: none;
+}
+
+
+
+.photobox_popup_onclick {
+
+    border: 3px solid red;
+    position:fixed;
+
+    background-color: #369;
+    border-radius: 10px;
+    color: white;
+    display: block;
+
+
+    top: 10%;
+    left: 10px;
+    right: 10px;
+    
+    height: 70%;
+    width: 70%;
+    
+
+    z-index: 100;
+}
+
+
+
+
+#IndexController {
+    position: relative;    
+}
+
+
+
+
+.photobox_popup {
+    display: none;
+}
+
+
+
+
+.pop {
+    height: 600px;
+    width: 500px;
+    position: fixed;
+    top: 25%;
+    left: 25%;
+    bottom: 25%;
+    right: 25%;
+    border: 4px solid #000;
+    padding: 10px;
+    background: #337ab7;
+    z-index: 100;
+    overflow: auto;
+    color: white;
+    border-radius: 10px;
+}
+
+
+
+
+#image_collection {
+    height: 400px;
+    width: 400px;
+    border: 2px solid #000;
+}
+
+
+
+
+#close {
+    z-index: 100;
+}
+
+
+
+
+#fade{
+    display: none;
+    position: fixed;
+    top: 0%;
+    left: 0%;
+    width: 100%;
+    height: 100%;
+    background-color: #000;
+    z-index:1001;
+    -moz-opacity: 0.7;
+    opacity:.70;
+    filter: alpha(opacity=70);
+}
+#light{
+    display: none;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    width: 300px;
+    height: 200px;
+    margin-left: -150px;
+    margin-top: -100px;                 
+    padding: 10px;
+    border: 2px solid #FFF;
+    background: #CCC;
+    z-index:1002;
+    overflow:visible;
+}

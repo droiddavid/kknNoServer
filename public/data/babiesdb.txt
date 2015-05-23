@@ -1,0 +1,20 @@
+{
+	"records": [
+		{
+			image: "/media/images/precious.jpg", 
+			alternatetext: "Precious", 
+			imagetext: "Precious is a great baby.", 
+			thumbnail: "/media/images/precious320x150.jpg",
+			numberofreviews: 22,
+			price: 194.33
+		},
+		{
+			image: "/media/images/layingbaby.jpg", 
+			alternatetext: "Laying Baby", 
+			imagetext: "Laying Baby is a great baby.", 
+			thumbnail: "/media/images/layingbaby320x150.jpg",
+			numberofreviews: 12,
+			price: 34.23
+		}
+	]
+}

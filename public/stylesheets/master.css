@@ -1,0 +1,18 @@
+* {
+	margin: 0;
+}
+
+
+.main-menu-list-group {
+  padding-left: 0;
+  margin-bottom: 5px;
+}
+
+.main-menu-list-group-item {
+  position: relative;
+  display: block;
+  padding: 1px 1px;
+  margin-bottom: -1px;
+  background-color: #fff;
+  border: 1px solid #ddd;
+}

@@ -1,0 +1,8 @@
+p There are {{slides.length}} slides
+	div(ng-repeat='slide in slides')
+		h3 {{slide.image}}
+
+		div {{slide.alternatetext}}
+			a(href='readPost/{{slide.imagetext}}') More |  - 
+			a(href='editPost/{{slide.thumbnail}}') Edit |  - 
+			a(href='deletePost/{{slide.imagetext}}') Delete
